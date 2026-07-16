@@ -1,74 +1,469 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,700&display=swap"
-        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RocketCoffee</title>
+
+    <!--=============== SEO ===============-->
+    <meta name="description"
+        content="Conheça o cardápio da RocketCoffee: cafés especiais, brunch, bebidas geladas e sobremesas artesanais.">
+    <meta name="author" content="Wilhan Mac'Arthur">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <title>RocketCoffee | Cafeteria e Brunch</title>
+
+    <!--=============== BROWSER ===============-->
+    <meta name="theme-color" content="#3c2415">
+
+    <!--=============== GOOGLE FONTS ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Serif:opsz,wght@8..144,600;700&display=swap"
+        rel="stylesheet">
+
+    <!--=============== CSS ===============-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Rocket<span>Coffee</span></h1>
-        <p>Aberto todos os dias. 8h - 21hrs</p>
-    </header>
-    <section>
-        <h2>Brunch</h2>
-        <ul>
-            <li>
-                <div class="details">
-                    <h3>Waffle Doce</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <a href="#cardapio" class="skip-link">
+        Pular para o cardápio
+    </a>
+
+    <!--==================== PAGE ====================-->
+    <div class="page">
+        <!--==================== HERO ====================-->
+        <header class="hero" id="inicio" aria-labelledby="hero-title">
+            <!-- Elementos apenas decorativos -->
+            <div class="hero-decoration hero-decoration-left" aria-hidden="true"></div>
+            <div class="hero-decoration hero-decoration-right" aria-hidden="true"></div>
+            <div class="hero-content">
+                <p class="hero-label">
+                    Cafeteria artesanal
+                </p>
+                <div class="brand" aria-label="RocketCoffee">
+                    <span class="brand-icon" aria-hidden="true">
+                        ☕
+                    </span>
+                    <h1 class="brand-name" id="hero-title">
+                        Rocket<span>Coffee</span>
+                    </h1>
                 </div>
-                <strong class="price">R$37.70</strong>
-            </li>
-            <li>
-                <div class="details">
-                    <h3>Arroz Doce</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p class="hero-description">
+                    Cafés especiais, receitas artesanais e experiências preparadas para
+                    tornar cada momento do seu dia mais saboroso.
+                </p>
+                <ul class="hero-features" aria-label="Informações da cafeteria">
+                    <li>
+                        <span class="hero-feature-icon" aria-hidden="true">◷</span>
+
+                        <span>
+                            <strong>Funcionamento</strong>
+                            Todos os dias, das 8h às 21h
+                        </span>
+                    </li>
+                    <li>
+                        <span class="hero-feature-icon" aria-hidden="true">⌖</span>
+
+                        <span>
+                            <strong>Localização</strong>
+                            Centro, Serra — ES
+                        </span>
+                    </li>
+                </ul>
+                <div class="hero-actions">
+                    <a href="#cardapio" class="button button-primary">
+                        Ver cardápio
+                    </a>
+                    <a href="https://wa.me/5527999999999" target="_blank" rel="noopener noreferrer"
+                        class="button button-secondary" aria-label="Fazer pedido pelo WhatsApp">
+                        Fazer pedido
+                    </a>
                 </div>
-                <strong class="price">R$37.70</strong>
-            </li>
-            <li>
-                <div class="details">
-                    <h3>Maçã Doce</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </header>
+        <!--==================== MAIN ====================-->
+        <main class="main-content" id="cardapio">
+            <!--==================== INTRO ====================-->
+            <section class="menu-introduction" aria-labelledby="menu-title">
+                <div>
+                    <span class="section-label">
+                        Nosso cardápio
+                    </span>
+                    <h1 class="page-title" id="menu-title">
+                        Escolha o seu momento favorito
+                    </h1>
                 </div>
-                <strong class="price">R$37.70</strong>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Bebidas</h2>
-        <ul>
-            <li>
-                <div class="details">
-                    <h3>Café</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p>
+                    Produtos preparados com ingredientes selecionados, receitas
+                    artesanais e cafés cuidadosamente escolhidos.
+                </p>
+            </section>
+            <!--==================== BRUNCH ====================-->
+            <section class="menu-section" aria-labelledby="brunch-title">
+                <header class="section-header">
+                    <div class="section-heading">
+                        <span class="section-number">01</span>
+                        <div>
+                            <span class="section-label">
+                                Para começar bem
+                            </span>
+                            <h2 id="brunch-title">
+                                Brunch
+                            </h2>
+                        </div>
+                    </div>
+                    <p>
+                        Opções doces e salgadas preparadas para acompanhar seus melhores
+                        momentos.
+                    </p>
+                </header>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Waffle Doce</h3>
+                                <strong class="price">
+                                    R$ 37,70
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Waffle artesanal com frutas frescas, mel, creme de baunilha
+                                e uma leve camada de açúcar.
+                            </p>
+                            <ul class="item-tags" aria-label="Características do Waffle Doce">
+                                <li>Artesanal</li>
+                                <li>Frutas frescas</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Arroz Doce Cremoso</h3>
+                                <strong class="price">
+                                    R$ 22,90
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Receita tradicional preparada com leite, canela, baunilha
+                                e raspas de limão.
+                            </p>
+                            <ul class="item-tags" aria-label="Características do Arroz Doce">
+                                <li>Tradicional</li>
+                                <li>Sem glúten</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Maçã Caramelizada</h3>
+                                <strong class="price">
+                                    R$ 28,50
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Maçãs assadas com canela, caramelo artesanal, castanhas
+                                e sorvete de creme.
+                            </p>
+                            <ul class="item-tags" aria-label="Características da Maçã Caramelizada">
+                                <li>Especial da casa</li>
+                                <li>Com sorvete</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Croissant da Casa</h3>
+                                <strong class="price">
+                                    R$ 26,90
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Croissant amanteigado recheado com queijo, peito de peru,
+                                tomate e folhas frescas.
+                            </p>
+                            <ul class="item-tags" aria-label="Características do Croissant">
+                                <li>Salgado</li>
+                                <li>Feito na hora</li>
+                            </ul>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <!--==================== COFFEE ====================-->
+            <section class="menu-section" aria-labelledby="coffee-title">
+                <header class="section-header">
+                    <div class="section-heading">
+                        <span class="section-number">02</span>
+                        <div>
+                            <span class="section-label">
+                                Cafés especiais
+                            </span>
+
+                            <h2 id="coffee-title">
+                                Cafés
+                            </h2>
+                        </div>
+                    </div>
+                    <p>
+                        Grãos selecionados, moagem fresca e diferentes métodos de preparo.
+                    </p>
+                </header>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Espresso</h3>
+                                <strong class="price">
+                                    R$ 9,90
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Café intenso, encorpado e preparado com grãos especiais
+                                de torra média.
+                            </p>
+                            <ul class="item-tags" aria-label="Características do Espresso">
+                                <li>50 ml</li>
+                                <li>Intenso</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Cappuccino Cremoso</h3>
+                                <strong class="price">
+                                    R$ 16,90
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Espresso, leite vaporizado, espuma cremosa e finalização
+                                com canela.
+                            </p>
+                            <ul class="item-tags" aria-label="Características do Cappuccino">
+                                <li>250 ml</li>
+                                <li>Mais pedido</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Mocha</h3>
+                                <strong class="price">
+                                    R$ 18,90
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Espresso combinado com chocolate, leite vaporizado
+                                e chantilly artesanal.
+                            </p>
+                            <ul class="item-tags" aria-label="Características do Mocha">
+                                <li>Chocolate</li>
+                                <li>250 ml</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Café Coado</h3>
+
+                                <strong class="price">
+                                    R$ 12,90
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Café filtrado lentamente, destacando notas suaves,
+                                aroma delicado e sabor equilibrado.
+                            </p>
+                            <ul class="item-tags" aria-label="Características do Café Coado">
+                                <li>V60</li>
+                                <li>Grãos especiais</li>
+                            </ul>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <!--==================== COLD DRINKS ====================-->
+            <section class="menu-section" aria-labelledby="cold-drinks-title">
+                <header class="section-header">
+                    <div class="section-heading">
+                        <span class="section-number">03</span>
+                        <div>
+                            <span class="section-label">
+                                Refrescantes
+                            </span>
+                            <h2 id="cold-drinks-title">
+                                Bebidas geladas
+                            </h2>
+                        </div>
+                    </div>
+                    <p>
+                        Bebidas leves e refrescantes para todos os momentos do dia.
+                    </p>
+                </header>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Cold Brew</h3>
+                                <strong class="price">
+                                    R$ 17,90
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Café extraído a frio por 12 horas, com sabor suave,
+                                refrescante e baixa acidez.
+                            </p>
+                            <ul class="item-tags" aria-label="Características do Cold Brew">
+                                <li>300 ml</li>
+                                <li>Baixa acidez</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Chá Gelado</h3>
+
+                                <strong class="price">
+                                    R$ 14,90
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Chá preto gelado com limão, hortelã e xarope artesanal
+                                de frutas.
+                            </p>
+                            <ul class="item-tags" aria-label="Características do Chá Gelado">
+                                <li>400 ml</li>
+                                <li>Refrescante</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Chocolate Gelado</h3>
+
+                                <strong class="price">
+                                    R$ 19,90
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Bebida cremosa com chocolate, leite, gelo e chantilly
+                                artesanal.
+                            </p>
+                            <ul class="item-tags" aria-label="Características do Chocolate Gelado">
+                                <li>400 ml</li>
+                                <li>Cremoso</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="menu-item">
+                        <article>
+                            <div class="item-heading">
+                                <h3>Limonada da Casa</h3>
+                                <strong class="price">
+                                    R$ 13,90
+                                </strong>
+                            </div>
+                            <p class="description">
+                                Limão fresco, água com gás, hortelã e um toque de açúcar
+                                artesanal.
+                            </p>
+                            <ul class="item-tags" aria-label="Características da Limonada">
+                                <li>Natural</li>
+                                <li>400 ml</li>
+                            </ul>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <!--==================== HIGHLIGHT ====================-->
+            <section class="highlight">
+                <div class="highlight-content">
+                    <span class="section-label">
+                        Especial RocketCoffee
+                    </span>
+                    <h2>
+                        Combo do dia
+                    </h2>
+                    <p>
+                        Cappuccino cremoso, croissant da casa e uma sobremesa artesanal.
+                    </p>
                 </div>
-                <strong class="price">R$37.70</strong>
-            </li>
-            <li>
-                <div class="details">
-                    <h3>Capuccino</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="highlight-price">
+                    <span>Por apenas</span>
+                    <strong>R$ 39,90</strong>
                 </div>
-                <strong class="price">R$37.70</strong>
-            </li>
-            <li>
-                <div class="details">
-                    <h3>Chá Gelado</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <a href="https://wa.me/5527999999999" target="_blank" rel="noopener noreferrer"
+                    class="button button-light">
+                    Pedir agora
+                </a>
+            </section>
+            <!--==================== INFORMATION ====================-->
+            <section class="store-information" aria-labelledby="information-title">
+                <div>
+                    <span class="section-label">
+                        Visite a cafeteria
+                    </span>
+                    <h2 id="information-title">
+                        Café, conforto e boas experiências
+                    </h2>
+                    <p>
+                        Um espaço preparado para você trabalhar, conversar, descansar
+                        ou simplesmente aproveitar um bom café.
+                    </p>
                 </div>
-                <strong class="price">R$37.70</strong>
-            </li>
-        </ul>
-    </section>
+                <address>
+                    <div class="address-item">
+                        <strong>Endereço</strong>
+                        <span>Rua das Cafeterias, 100 — Serra, ES</span>
+                    </div>
+                    <div class="address-item">
+                        <strong>Funcionamento</strong>
+                        <span>Todos os dias, das 8h às 21h</span>
+                    </div>
+                    <div class="address-item">
+                        <strong>Contato</strong>
+                        <a href="tel:+5527999999999">
+                            (27) 99999-9999
+                        </a>
+                    </div>
+                </address>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer-brand">
+                <span class="brand-icon" aria-hidden="true">☕</span>
+
+                <span class="brand-name">
+                    Rocket<span>Coffee</span>
+                </span>
+            </div>
+
+            <p>
+                &copy; 2026
+                <a href="https://wilithagency.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    Wilith Agency
+                </a>.
+                Todos os direitos reservados.
+            </p>
+
+            <a href="#inicio" class="back-to-top">
+                Voltar ao início ↑
+            </a>
+        </footer>
+    </div>
 </body>
 
 </html>
